@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .left > input {
+        background-color: black;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 5px;
+        color: white;
+        font-weight: bolder;
+        padding-left: 15px;
+        border-radius: 5px;
+        text-align: left;
+        width: 200px;
+      }
+      .left {
+        display: block;
+      }
+      .right {
+        display: inline-grid;
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+      }
+      .student {
+        padding-top: 20px;
+        padding-left: 10px;
+        font-weight: bold;
+      }
+      span{
+        font-weight: lighter;
+      }
+
+      .right > .head {
+        display: block;
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+      
+      .ls{
+        display: none;
+      }
+
+      @media only screen and (max-width: 820px) {
+        .content {
+          grid-template-columns: auto auto;
+        }
+      }
+
+      @media only screen and (min-width: 820px) {
+        .left > div{
+            width: 200px;
+        }
+        .left{
+            display: grid;
+            row-gap: 10px;
+            float: left;
+        }
+        .right{
+            float: right;
+            width: 60%;
+            margin-right: 10%;
+        }
+        .container{
+            justify-content: space-between;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            position : relative;
+        }
+        .student{
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .right > .head
+        {
+            text-align: center;
+            background-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <input type="button" value="Public" onclick="fun1()">
+        <ul style="list-style-type: disc;" id="1" class="ls">
+          <li>Link 1</li>
+          <li>Link 2</li>
+        </ul>
+        <input type="button" value="View" onclick="fun2()">
+        <ul style="list-style-type: disc;" id="2" class="ls">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
+          <li>Link 5</li>
+          <li>Link 6</li>
+        </ul>
+        <input type="button" value="HR" onclick="fun3()">
+        <ul style="list-style-type: disc;" id="3" class="ls">
+          <li>Address Details</li>
+          <li>Family Details</li>
+        </ul>
+        <input type="button" value="Network Details" onclick="fun4()">
+        <ul style="list-style-type: disc;" id="4" class="ls">
+          <li>Vehicle Details</li>
+          <li>Machine Details</li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="head">
+          <h1>Details</h1>
+        </div>
+        <div class="content">
+          <div class="student">
+            <div>Name: <span>abc</span></div>
+            <div>Value: <span>def</span></div>
+            <div>Extra: <span>xyz</span></div>
+          </div>
+          <div class="student">
+            <div>Name: <span>abc</span></div>
+            <div>Value: <span>def</span></div>
+            <div>Extra: <span>xyz</span></div>
+          </div>
+          <div class="student">
+            <div>Name: <span>abc</span></div>
+            <div>Value: <span>def</span></div>
+            <div>Extra: <span>xyz</span></div>
+          </div>
+          <div class="student">
+            <div>Name: <span>abc</span></div>
+            <div>Value: <span>def</span></div>
+            <div>Extra: <span>xyz</span></div>
+          </div>
+          <div class="student">
+            <div>Name: <span>abc</span></div>
+            <div>Value: <span>def</span></div>
+            <div>Extra: <span>xyz</span></div>
+          </div>
+          <div class="student">
+            <div>Name: <span>abc</span></div>
+            <div>Value: <span>def</span></div>
+            <div>Extra: <span>xyz</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function fun1()
+      {
+        var x = document.getElementById("1");
+        if(x.style.display === "none")
+        {
+          x.style.display = "block";
+        }
+        else
+        {
+          x.style.display = "none";
+        }
+      }
+      function fun2()
+      {
+        var a = document.getElementById("2");
+        if(a.style.display === "none")
+        {
+          a.style.display = "block";
+        }
+        else
+        {
+          a.style.display = "none";
+        }
+      }
+      function fun3()
+      {
+        var b = document.getElementById("3");
+        if(b.style.display === "none")
+        {
+          b.style.display = "block";
+        }
+        else
+        {
+          b.style.display = "none";
+        }
+      }
+      function fun4()
+      {
+        var c = document.getElementById("4");
+        if(c.style.display === "none")
+        {
+          c.style.display = "block";
+        }
+        else
+        {
+          c.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
