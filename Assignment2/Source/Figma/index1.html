@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <nav class="border flex pb-5 lg:justify-center">
+      <div class="flex flex-row items-center">
+        <div class="cursor-pointer lg:hidden " id="burger">
+          <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </div>
+        <div class="flex  flex-row mt-3 lg:pl-10 items-center ">
+          <img class="h-[50px] w-[50px]"
+            src="https://i.pinimg.com/originals/47/1f/5f/471f5f71e285298fb6c5f4190feaed0b.png" alt="">
+          <div class="flex flex-col pl-2">
+            <span class="font-bold">Haus Gitschberg</span>
+            <span class="text-center">Lassig - Herzlich</span>
+          </div>
+        </div>
+      </div>
+      <ul class="mt-6 hidden lg:flex" id="menu">
+        <li class="lg:pl-20 2xl:pl-16 text-blue-400">
+          <span>HOME</span>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16 hover:text-blue-400">
+          <div class="group inline-block relative">
+            <button class="inline-flex items-center">
+              <span class="mr-1">BLOG</span>
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </button>
+            <ul
+              class=" p-5 absolute border border-yellow-500 hidden shadow-md text-black pt-1 group-hover:block w-72 text-start">
+              <li class="pt-2">
+                <p class="bg-white py-2 px-4 block whitespace-nowrap"><span>1st </span>Full Post + <span>2</span>cols
+                  Grid</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 block whitespace-nowrap"><span>1st </span>Full Post + list</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 block whitespace-nowrap"><span>2 </span>cols Grid Layout </p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 block whitespace-nowrap">List Layout</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 block whitespace-nowrap"><span>1st </span>cols Grid Layout</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 block whitespace-nowrap">Standard Blog Layout</p>
+
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16 hover:text-blue-400">
+          <div class="group inline-block relative">
+            <button class="inline-flex items-center">
+              <span class="mr-1">FEATURES</span>
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </button>
+            <ul
+              class=" p-5 absolute border border-yellow-500 hidden shadow-md text-black pt-1 group-hover:block w-72 text-start">
+              <li class="pt-2">
+                <p class="bg-white py-2 px-4 whitespace-nowrap flex justify-between">Headers <img
+                    class="w-[15px] h-[15px] mt-1" src="https://www.svgrepo.com/show/486236/right-arrow-backup-2.svg"
+                    alt=""></p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 flex justify-between whitespace-nowrap">Sliders <img
+                    class="w-[15px] h-[15px] mt-1" src="https://www.svgrepo.com/show/486236/right-arrow-backup-2.svg"
+                    alt=""></p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 flex justify-between whitespace-nowrap">Sidebars <img
+                    class="w-[15px] h-[15px] mt-1" src="https://www.svgrepo.com/show/486236/right-arrow-backup-2.svg"
+                    alt=""></p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16 hover:text-blue-400">
+          <div class="group inline-block relative">
+            <button class="inline-flex items-center">
+              <span class="mr-1">CATEGORIES</span>
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </button>
+            <ul
+              class=" p-5 absolute border border-yellow-500 hidden shadow-md text-black pt-1 group-hover:block w-72 text-start">
+              <li class="pt-2">
+                <p class="bg-white py-2 px-4 whitespace-nowrap flex justify-between">Lifestyle</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 flex justify-between whitespace-nowrap">Travel</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 flex justify-between whitespace-nowrap">Photo</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16 hover:text-blue-400">
+          <p>ABOUT</p>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16 hover:text-blue-400">
+          <p>CONTACT</p>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16 hover:text-blue-400">
+          <div class="group inline-block relative">
+            <button class="inline-flex items-center">
+              <span class="mr-1">SHOP</span>
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </button>
+            <ul
+              class=" p-5 absolute border border-yellow-500 hidden shadow-md text-black pt-1 group-hover:block w-72 text-start">
+              <li class="pt-2">
+                <p class="bg-white py-2 px-4 whitespace-nowrap flex justify-between">Cart</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 flex justify-between whitespace-nowrap">Checkout</p>
+                <hr class="border border-yellow-500">
+              </li>
+              <li>
+                <p class="bg-white py-2 px-4 flex justify-between whitespace-nowrap">MyAccount</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16 hover:text-blue-400">
+          <p>PORTFOLIO</p>
+        </li>
+        <li class="lg:pl-6 2xl:pl-16">
+          <input
+            class="mt-[0.3rem] mr-2 h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-black outline-none before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]"
+            type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
